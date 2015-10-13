@@ -31,14 +31,21 @@ public class MainActivity extends AppCompatActivity {
 
         //currScore.setText(cur + "");
           currScore.setText(Integer.toString(cur));
-
+        hiScore.setText(Integer.toString(highestRate));
       //  currScore.setText(cur);
     }
 
     public void add(View view) {
         cur++;
-        currScore = (TextView) findViewById(R.id.currScore);
+       // currScore = (TextView) findViewById(R.id.currScore);
         currScore.setText(Integer.toString(cur));
+    //    hiScore = (TextView) findViewById(R.id.currScore);
+        if (highestRate<cur)
+        {
+            highestRate=cur;
+        }
+        hiScore.setText(Integer.toString(highestRate));
+
     }
 
     protected void save() {
@@ -57,13 +64,15 @@ public class MainActivity extends AppCompatActivity {
     }
     public void clearcurr(View view) {
         cur=0;
-        currScore = (TextView) findViewById(R.id.currScore);
+      //  currScore = (TextView) findViewById(R.id.currScore);
         currScore.setText(Integer.toString(cur));
     }
     public void clearall(View view) {
         highestRate =0;
-        hiScore = (TextView) findViewById(R.id.currScore);
+        cur=0;
+       // hiScore = (TextView) findViewById(R.id.currScore);
         hiScore.setText(Integer.toString(highestRate));
+      //  currScore = (TextView) findViewById(R.id.currScore);
     }
 
 
