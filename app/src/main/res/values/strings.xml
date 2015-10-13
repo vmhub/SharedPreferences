@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SharedPreferences</string>
+
+    <string name="current">Current:</string>
+    <string name="max">Maximum:</string>
+
+    <string name="add">Add Rate</string>
+    <string name="clearcurr">Clear Current</string>
+    <string name="clearall">Clear All</string>
+    <string name="action_settings">Settings</string>
+</resources>
